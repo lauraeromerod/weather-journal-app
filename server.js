@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "website")));
 
 // Setup Server
-const port = 8001;
+const port = 8001 || process.env.$PORT;
 app.listen(port, () => {
   console.log(`running on localhost: ${port}`);
 });
