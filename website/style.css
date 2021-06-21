@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  cursor: url("./assets/cursor/earth-globe.png"), auto;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: bold;
+  font-size: 2.2rem;
+  padding-left: 1rem;
+  margin-top: 0;
+  background: -webkit-linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 span {
+  display: block;
+}
+input {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-family: "Cutive Mono", monospace;
+  color: #fff;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  display: inline-block;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 1rem;
+  cursor: url("./assets/cursor/lightning.png"), auto;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+textarea:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+button:focus {
+  outline: 0;
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+
+button:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+button:disabled {
+  color: #000;
+  background-color: #eee;
+  border-color: #eee;
+}
+
+footer {
+  font-family: "The Girl Next Door", cursive;
+  width: 100%;
+  text-align: center;
+  height: 2rem;
+  margin: 0;
+}
+
+footer a {
+  color: #00ac90;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: url("./assets/cursor/lightning.png"), auto;
+}
+
+#app {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+#entryHolder,
+.icon {
+  width: 50%;
+  margin: 0;
+}
+
+.holder.entry {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.holder.entry.active {
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.date,
+.place,
+.temp,
+.content {
+  font-family: "Cutive Mono", monospace;
+  font-size: 1rem;
+  color: #000;
+  margin: 0.2rem 0;
+  padding-left: 1rem;
+}
+
+.place {
+  font-weight: bold;
+}
+
+.temp sup {
+  vertical-align: text-top;
+}
+
+.icon img {
+  max-height: 16rem;
+}
